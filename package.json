@@ -1,0 +1,17 @@
+{
+  "name": "connect-test",
+  "version": "0.0.1",
+  "description": "arduino connection test",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies" : [],
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wcm381/arduino-net-conn"
+  }
+}
