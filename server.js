@@ -1,8 +1,11 @@
-
+// this worked after, on Amazon-Linux AMI running:
+    //sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+    //sudo iptables -A INPUT -p tcp -m tcp --sport 80 -j ACCEPT
+    //sudo iptables -A OUTPUT -p tcp -m tcp --dport 80 -j ACCEPT
 
 var remote_net = require('net');
 
-var REMOTE_PORT = 12002;
+var REMOTE_PORT = 8080;
 
 var remoteClients = [];
 
